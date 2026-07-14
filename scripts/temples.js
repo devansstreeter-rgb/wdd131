@@ -1,7 +1,7 @@
 const navi = document.getElementById("mobile-nav");
 const menuButton = document.getElementById("menu-icon");
 
-function activate() {
+menuButton.addEventListener("click", function() {
     navi.classList.toggle("rest");
     navi.classList.toggle("open");
     if (menuButton.innerHTML == "x") {
@@ -9,4 +9,4 @@ function activate() {
     } else {
         menuButton.innerHTML = "x";
     }
-}
+});
