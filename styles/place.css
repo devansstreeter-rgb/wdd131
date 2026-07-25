@@ -1,5 +1,120 @@
-* {
+:root {
+    --mobile-width: 600px;
+    --cloud-grey: #606860;
+    --dust: #fe8;
+    --redrock: #b65;
+}
+
+*, ::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: var(--redrock);
+    margin: 0;
+}
+
+header {
+    padding: 1rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header, footer {
+    background-color: var(--cloud-grey);
+    color: var(--dust);
+    text-align: center;
+}
+
+footer {
+    padding: 1.5rem 1rem 2rem;
+}
+
+picture {
+    position: static;
+    margin: 0;
+    width: 100%;
+}
+
+picture img {
+    width: 100%;
+}
+section {
+    width: 70%;
+    position: static;
+    margin: 1rem auto;
+    padding: 1.5rem 0 2.5rem;
+    background-color: var(--dust);
+}
+
+section p {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+}
+
+.label {
+    grid-column: 1;
+    text-align: right;
+}
+
+.value {
+    grid-column: 2;
+    text-align: left
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+#thundercloud {
+    display: block;
+    margin: 0.75rem auto;
+    width: 4rem;
+    height: auto;
+}
+
+
+@media screen and (min-width: 600px) {
+#weather h2::after {
+    content: " ⛈️";
+}
+
+#thundercloud {
+    display: none;
+}
+
+picture {
+    position: relative;
+}
+
+picture img {
+    width: 1920px;
+}
+
+section {
+    display: block;
+    position: absolute;
+    width: 20rem;
+    background-color: var(--cloud-grey);
+    color: var(--dust);
+    padding: 1rem 0 2rem;
+}
+
+#data {
+    top: 10rem;
+    left: 10%;
+}
+
+#weather {
+    top: 40rem;
+    right: 10%;
+}
 }
