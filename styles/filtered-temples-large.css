@@ -1,0 +1,30 @@
+@media screen and (min-width: 42rem) {
+    #menu-icon {
+        display: none;
+    }
+
+    #mobile-nav {
+        display: none;
+    }
+
+    #normal-nav {
+        display: flex;
+    }
+
+    .navigation ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    #gallery {
+        gap: 1rem;
+        min-width: 80%;
+        max-width: 40rem;
+    }
+
+    figure {
+        max-width: 22rem;
+    }
+}

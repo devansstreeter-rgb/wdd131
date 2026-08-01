@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Temple Album</title>
+        <meta name="description" content="a photo album of temple images which demonstrates responsive web design with a hamburger menu">
+        <meta name="author" content="Daniel Streeter">
+        <link rel="stylesheet" href="styles/filtered-temples.css">
+        <link rel="stylesheet" href="styles/filtered-temples-large.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+        <script src="scripts/getdates.js" defer></script> 
+        <script src="scripts/filtered-temples.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <span id="logo">Temple Album</span>
+            <nav id="normal-nav" class="navigation">
+                <ul>
+                    <li><a title="Home" href="?Home">Home</a></li>
+                    <li><a title="Old" href="?old">Old</a></li>
+                    <li><a title="New" href="?new">New</a></li>
+                    <li><a title="Large" href="?large">Large</a></li>
+                    <li><a title="Small" href="?small">Small</a></li>
+                </ul>
+            </nav>
+            <button id="menu-icon">≡</button>
+        </header>
+                <ul id="mobile-nav" class="navigation rest">
+                    <li><a title="Home" href="?Home">Home</a></li>
+                    <li><a title="Old" href="?old">Old</a></li>
+                    <li><a title="New" href="?new">New</a></li>
+                    <li><a title="Large" href="?large">Large</a></li>
+                    <li><a title="Small" href="?small">Small</a></li>
+                </ul>
+        <main>
+            <h1>Home</h1>
+            <section id="gallery">
+            </section>
+        </main>
+        <footer>
+            <p>&copy;<span id="currentyear"></span> Daniel Streeter, U.S.A.</p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+</html>
