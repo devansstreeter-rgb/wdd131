@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title>Product Review</title>
+        <meta name="description" content="A page to demonstrate good practices in HTML forms by simulating a product review interface">
+        <meta name="author" content="Daniel Streeter">
+        <link rel="stylesheet" href="styles/form.css">
+        <script src="scripts/getdates.js" defer></script>
+        <script src="scripts/form.js" defer></script>
+    </head>
+    <body>
+        <header><h1>Product Review</h1></header>
+        <main>
+            <form method="get" action="review.html">
+                <label>Product Name<select id="product-name" name="productName" required>
+                    <option value="" disabled selected>Choose a Product ...</option>
+                </select></label>
+                <fieldset id="rating">
+                <legend>Overall Rating</legend>
+                <label>☆<input id="one-star" type="radio" name="rating" value="1" required></label>
+                <label>☆☆<input id="two-star" type="radio" name="rating" value="2" required></label>
+                <label>☆☆☆<input id="three-star" type="radio" name="rating" value="3" required></label>
+                <label>☆☆☆☆<input id="four-star" type="radio" name="rating" value="4" required></label>
+                <label>☆☆☆☆☆<input id="five-star" type="radio" name="rating" value="5" required></label>
+                </fieldset>
+                <label>Date of Installation<input id ="install-date" type="date" name="installDate" required></label>
+                <fieldset>
+                    <legend>Which features did you find useful in the product?<span class="suggestion">Check all that apply</span></span></legend>
+                    <label><input id="durability" name="durability" value="durability" type="checkbox">Durability</label>
+                    <label><input id="ease" name="ease" value="ease" type="checkbox">Ease of Use</label>
+                    <label><input id="performance" name="performance" value="performance" type="checkbox">Performance</label>
+                    <label><input id="design" name="design" value="design" type="checkbox">Design</label>
+                </fieldset>
+                <label>Written Review<span class="optional">(Optional)</span><textarea id="written" name="writtenReview"></textarea></label>
+                <label>Your Name<span class="optional">(Optional)</span><input id="name" name="uname" type="text"></label>
+                <input type="submit" value="Post Review">
+            </form>
+        </main>
+        <footer>
+        <p>&copy;<span id="currentyear"></span> Daniel Streeter, U.S.A.</p>
+        <p id="lastModified"></p>
+        </footer>
+    </body>
+</html>
