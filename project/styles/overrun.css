@@ -1,0 +1,87 @@
+/* General */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Typography */
+body {
+  font-family: 'Voltaire', sans-serif;
+}
+
+a {
+  color: #000;
+}
+
+h1 {
+  font-family: 'Cantora One', serif;
+}
+
+h2 {
+  font-family: 'Contrail One', sans-serif;
+}
+
+h3 {
+  font-family: 'Voltaire', sans-serif;
+  font-size: 1.5em;
+}
+
+p {
+  font-family: 'Voltaire', sans-serif;
+  line-height: 1.5;
+}
+
+nav {
+  font-family: 'Voltaire', sans-serif;
+}
+
+button {
+  font-family: 'Contrail One';
+}
+
+ul, ol {
+  font-family: 'Voltaire';
+}
+
+/* Header */
+header {
+
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+header nav {
+  justify-content: space-between;
+}
+
+header nav a {
+  margin: 0 1rem;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+}
+
+/* Recipe Cards */
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  main {
+    width: 80%;
+    margin: 0 auto;
+  }
+}

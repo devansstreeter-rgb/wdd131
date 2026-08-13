@@ -1,0 +1,70 @@
+:root {
+    --color-1: #888;
+    --color-2: #888;
+    --color-3: #888;
+    --vanilla: #fff8bb;
+    --chocolate: #482010;
+    --strawberry: #fcc;
+    --milk-blue: #fefeff;
+    --typeface-1: sans-serif;
+    --typeface-2: monospace;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    background-color: #eee;
+    width: 80%;
+}
+
+#color-schema {
+    display: flex;
+}
+
+#color-schema div {
+    background-color: var(--milk-blue);
+    padding: 0.5rem;
+}
+
+#color-schema h3 {
+    padding: 0.5rem;
+}
+
+#vanilla {
+        h3 {
+            background-color: var(--vanilla);
+            color: var(--chocolate);
+        }
+        li {
+            
+        }
+}
+
+#chocolate {
+    h3 {
+        background-color: var(--chocolate);
+        color: #fff;
+    }
+}
+
+#strawberry {
+    h3 {
+        background-color: var(--strawberry);
+        color: var(--chocolate);
+    }
+}
+
+#typography {
+    h2 {
+        font-family: var(--typeface-1);
+    }
+    p {
+        font-family: var(--typeface-2);
+    }
+}

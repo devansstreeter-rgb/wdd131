@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recipes | Ice & Overrun</title>
+<meta name="description" content="Recipe Page - provides recipes for frozen desserts, associated toppings, etc.">
+<meta name="author" content="Daniel Streeter">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cantora+One&family=Contrail+One&family=Voltaire&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/overrun.css">
+<link rel="stylesheet" href="styles/overrun.css">
+<script src="scripts/overrun.js" defer></script>
+</head>
+<body>
+<header>
+  <a href="index.html"><img src="images/overrun-logo.svg" alt="Ice & Overrun - Frozen Dessert Info"></a>
+  <nav>
+    <a href="history.html">History</a>
+    <a href="tips.html">Tips & Tools</a>
+    <a href="recipes.html">Recipes</a>
+  </nav>
+</header>
+<main>
+<h1>Recipes</h1>
+<h2>Previously Viewed</h2>
+<section id="viewed">
+</section>
+<form id="adv-search" method="get">
+  <h2>Advanced Search</h2>
+  <fieldset id="keyword-search">
+    <legend>Keyword Search</legend>
+    <label for="keyword">Word<input id="keyword" type="text" name="keyword"></label>
+  <fieldset id="keyword-type">
+    <legend>Search by</legend>
+    <label for="by-any"><input type="radio" id="by-any" name="keyword-type" value="by-any" checked>Any</label>
+    <label for="by-title"><input type="radio" id="by-title" name="keyword-type" value="by-title">Title</label>
+    <label for="by-ingredient"><input type="radio" id="by-ingredient" name="keyword-type" value="by-ingredient">Ingredient</label>
+  </fieldset>
+  </fieldset>
+  <fieldset id="search-tags">
+    <legend>Tags</legend>
+    <label for="check-vintage"><input id="check-vintage" type="checkbox" name="vintage" value="true">Vintage</label>
+    <label for="check-vegan"><input id="check-vegan" type="checkbox" name="vegan" value="true">Vegan</label>
+  </fieldset>
+  <label for="recipe-type">Recipe Type<select id="recipe-type" name="recipe-type">
+    <option value="all" selected>All Recipes</option>
+    <option value="frozen">Frozen Desserts</option>
+    <option value="toppings">Toppings</option>
+    <option value="cones-etc">Cones, etc.</option>
+  </select></label>
+  <button id="submit-search" type="submit" value="search">Search Recipes</button>
+</form>
+<h2>Search Results</h2>
+<section id="search-results">
+</section>
+<h2>Vintage</h2>
+<section id="vintage">
+</section>
+<h2>Toppings</h2>
+<section id ="toppings">
+</section>
+</main>
+<footer>
+  <p>&copy;<span id="currentyear"></span> Daniel Streeter, U.S.A.</p>
+  <p id="lastModified"></p>
+</footer>
+</body>
+</html>
