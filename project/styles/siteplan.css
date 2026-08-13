@@ -36,35 +36,24 @@ section {
     padding: 0.5rem;
 }
 
-#vanilla {
-        h3 {
-            background-color: var(--vanilla);
-            color: var(--chocolate);
-        }
-        li {
-            
-        }
+#vanilla h3 {
+    background-color: var(--vanilla);
+    color: var(--chocolate);
 }
 
-#chocolate {
-    h3 {
-        background-color: var(--chocolate);
-        color: #fff;
-    }
+#chocolate h3 {
+    background-color: var(--chocolate);
+    color: #fff;
 }
 
-#strawberry {
-    h3 {
-        background-color: var(--strawberry);
-        color: var(--chocolate);
-    }
+#strawberry h3 {
+    background-color: var(--strawberry);
+    color: var(--chocolate);
 }
 
-#typography {
-    h2 {
-        font-family: var(--typeface-1);
-    }
-    p {
-        font-family: var(--typeface-2);
-    }
+#typography h2 {
+    font-family: var(--typeface-1);
+}
+#typography p {
+    font-family: var(--typeface-2);
 }

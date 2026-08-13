@@ -37,19 +37,23 @@ nav {
 }
 
 button {
-  font-family: 'Contrail One';
+  font-family: 'Contrail One', sans-serif;
 }
 
 ul, ol {
-  font-family: 'Voltaire';
+  font-family: 'Voltaire', sans-serif;
 }
 
 /* Header */
 header {
-
   padding: 1rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+header img {
+  height: 6rem;
+  width: auto;
 }
 
 header nav {
@@ -74,12 +78,51 @@ footer {
   text-align: center;
 }
 
+section,
+article {
+  margin: 1rem, 0;
+}
+
 /* Recipe Cards */
 .hidden {
   display: none;
 }
 
+/* Form */
+fieldset {
+  border: none;
+  margin-bottom: 0.5rem;
+}
+
+label,
+legend {
+  margin-bottom: 0.5rem;
+}
+
+legend {
+  border-bottom: 1px solid #000;
+}
+
+input[type=text],
+select,
+form button {
+  display: block;
+  padding: 0.5rem;
+  width: 80%;
+  margin-bottom: 0.5rem;
+}
+
+input[type=radio],
+input[type=checkbox] {
+  padding: 0.5rem;
+  margin: 0.125rem;
+}
+/* Larger Screen Sizes */
 @media screen and (min-width: 600px) {
+  header img {
+    height: 7rem;
+  }
+
   main {
     width: 80%;
     margin: 0 auto;
